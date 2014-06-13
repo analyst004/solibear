@@ -17,10 +17,19 @@
         <Label Content="Y+Z" VerticalAlignment="Top" Margin="229,109,171,0"/>
         <Label Content="Z+1" VerticalAlignment="Top" Margin="229,136,171,0"/>
         <Label Content="X+Y+Z" Margin="229,163,171,174" d:LayoutOverrides="Height"/>
-        <Label Name="labelA" Content="0" HorizontalAlignment="Right" Margin="0,53,110,0" VerticalAlignment="Top"/>
-        <Label Name="labelB" Content="0" HorizontalAlignment="Right" Margin="0,81,110,0" VerticalAlignment="Top"/>
-        <Label Name="labelC" Content="0" HorizontalAlignment="Right" Margin="0,109,110,0" VerticalAlignment="Top"/>
-        <Label Name="labelD" Content="0" HorizontalAlignment="Right" Margin="0,136,110,0" VerticalAlignment="Top"/>
-        <Label Name="labelE" Content="0" HorizontalAlignment="Right" Margin="0,164,110,173" d:LayoutOverrides="Height"/>
+        <Label Name="labelA" Content="0" HorizontalAlignment="Right" Margin="0,53,87,0" VerticalAlignment="Top" Width="39"/>
+        <Label Name="labelB" Content="0" HorizontalAlignment="Right" Margin="0,81,87,0" VerticalAlignment="Top" Width="39"/>
+        <Label Name="labelC" Content="0" HorizontalAlignment="Right" Margin="0,108,76,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="50">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.321"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Name="labelD" Content="0" HorizontalAlignment="Right" Margin="0,136,87,0" VerticalAlignment="Top" Width="39"/>
+        <Label Name="labelE" Content="0" HorizontalAlignment="Right" Margin="0,164,87,173" Width="39"/>
     </Grid>
 </Window>

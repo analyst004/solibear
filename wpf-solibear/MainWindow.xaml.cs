@@ -112,7 +112,7 @@ namespace wpf_solibear
             }
             catch (Exception e1)
             {
-                x = 0;
+                y = 0;
             }
 
             int z = 0;
